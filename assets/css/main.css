@@ -3563,26 +3563,7 @@ input, select, textarea {
 						margin-bottom: 2em;
 					}
 
-				#banner.major {
-					height: auto;
-					min-height: 0;
-					max-height: none;
-				}
-
-}
-
-#banner.major::after {
-  display: none;
-}
-
-#banner.major .inner {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-}
-
-
+				
 		}
 
 		@media screen and (max-width: 480px) {
