@@ -3482,15 +3482,93 @@ input, select, textarea {
 
 		
 			#banner.major {
-    background-image: url(../images/youtube-intro-pic.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100vh; /* or something smaller like 60vh if you prefer */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+			height: 75vh;
+			min-height: 30em;
+			max-height: 50em;
+		}
+
+			#banner.major.alt {
+				opacity: 0.75;
+			}
+
+		#banner.style1:after {
+			background-color: #6fc3df;
+		}
+
+		#banner.style2:after {
+			background-color: #8d82c4;
+		}
+
+		#banner.style3:after {
+			background-color: #ec8d81;
+		}
+
+		#banner.style4:after {
+			background-color: #e7b788;
+		}
+
+		#banner.style5:after {
+			background-color: #8ea9e8;
+		}
+
+		#banner.style6:after {
+			background-color: #87c5a4;
+		}
+
+		body.is-preload #banner:after {
+			opacity: 1.0;
+		}
+
+		body.is-preload #banner > .inner {
+			-moz-filter: blur(0.125em);
+			-webkit-filter: blur(0.125em);
+			-ms-filter: blur(0.125em);
+			filter: blur(0.125em);
+			-moz-transform: translateX(-0.5em);
+			-webkit-transform: translateX(-0.5em);
+			-ms-transform: translateX(-0.5em);
+			transform: translateX(-0.5em);
+			opacity: 0;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				background-attachment: scroll;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 5em 0 1em 0 ;
+				height: auto;
+				margin-bottom: -2.75em;
+				max-height: none;
+				min-height: 0;
+				top: -2.75em;
+			}
+
+				#banner h1 {
+					font-size: 2em;
+				}
+
+				#banner > .inner .content {
+					display: block;
+				}
+
+					#banner > .inner .content > * {
+						margin-right: 0;
+						margin-bottom: 2em;
+					}
+
+				#banner.major {
+					height: auto;
+					min-height: 0;
+					max-height: none;
+				}
+
 }
 
 #banner.major::after {
