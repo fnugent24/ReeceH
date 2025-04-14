@@ -3947,7 +3947,14 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-			/* Make the last tile span the full width */
+			/* Force a tile to span full width in grid */
 			.tiles .full-width {
-			  grid-column: 1 / -1;
+			  grid-column: span 2; /* Default for mobile */
 			}
+			
+			@media screen and (min-width: 736px) {
+			  .tiles .full-width {
+			    grid-column: 1 / -1; /* Full width on wider screens */
+			  }
+			}
+
