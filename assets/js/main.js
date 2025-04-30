@@ -332,39 +332,5 @@
 
 			});
 
-// $(".button").blur(function() {
-//   alert("lost");
-// });
 
-$('#toggle').click(function() {
-  if ($(this).is(":checked")) {
-    $(".sub").css("opacity", 0);
-    $(".thanks").css("opacity", 1);
-  } 
-  else if ($(this).is(":not(:checked)")) {
-     $(".sub").css("opacity", 1);
-     $(".thanks").css("opacity", 0);
-  }
-});
-
- import React from "https://esm.run/react@18";
-import { createRoot } from "https://esm.run/react-dom@18/client";
-import confetti from "https://esm.run/canvas-confetti@1";
-
-function App() {
-  function onClick() {
-    confetti({
-      particleCount: 150,
-      spread: 60
-    });
-  }
-
-  return (
-    <button className="button" onClick={onClick}>
-      <span>🎉</span>
-      <span>Like</span>
-    </button>
-  );
-}
-
-createRoot(document.getElementById("root")).render(<App />);
+ })(jQuery);
