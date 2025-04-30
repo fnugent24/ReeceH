@@ -4130,37 +4130,3 @@ html {
         box-sizing: inherit;
     }
 }
-
-// Center & dribbble
-body {
-    min-height: 100vh;
-    display: flex;
-    font-family: 'Inter', Arial;
-    justify-content: center;
-    align-items: center;
-    background: #F6F8FF;
-    .button {
-        margin: 0 12px;
-    }
-    .dribbble {
-        position: fixed;
-        display: block;
-        right: 20px;
-        bottom: 20px;
-        img {
-            display: block;
-            height: 28px;
-        }
-    }
-    .twitter {
-        position: fixed;
-        display: block;
-        right: 64px;
-        bottom: 14px;
-        svg {
-            width: 32px;
-            height: 32px;
-            fill: #1da1f2;
-        }
-    }
-}
